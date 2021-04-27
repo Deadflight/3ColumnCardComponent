@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/Deadflight/3ColumnCardComponent)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://deadflight.github.io/3ColumnCardComponent/)
 
 ## My process
 
