@@ -1,0 +1,166 @@
+:root{
+  --BrightOrange: hsl(31, 77%, 52%);
+  --DarkCyan: hsl(184, 100%, 22%);
+  --VeryDarkCyan: hsl(179, 100%, 13%);
+
+  --TransparentWhite : hsla(0, 0%, 100%, 0.75);
+  --VeryLightGray : hsl(0, 0%, 95%);
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+body{
+  Font-size: 15px;
+  padding-top: 4.2rem;
+  padding-bottom: 4.2rem;
+}
+
+.card-group{
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.header{
+  margin-top: 1rem;
+}
+
+.header-tittle{
+  font-family: 'Big Shoulders Display';
+  color: var(--VeryLightGray);
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.card-paragraph{
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 16.8px;
+  color: var(--TransparentWhite);
+  margin-top: 0;
+  margin-bottom: 6rem;
+}
+
+#sedan-card{
+  background-color: var(--BrightOrange);
+  border-end-start-radius: 0.5rem;
+  border-start-start-radius: 0.5rem;
+}
+
+#suvs-card{
+  background-color: var(--DarkCyan);
+}
+
+#luxury-card{
+  background-color: var(--VeryDarkCyan);
+  border-end-end-radius: 0.5rem;
+  border-start-end-radius: 0.5rem;
+}
+
+/*Buttons*/
+
+.btn{
+  background-color: var(--VeryLightGray);
+  font-size: var(--TransparentWhite);
+  display: inline-block;
+  font-weight: 400;
+	border-radius:60px;
+	font-size:16px;
+	padding:14px 16px;
+	text-decoration:none;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  margin-bottom: 1rem;
+}
+
+#sedan-card button{
+  color: var(--BrightOrange);
+}
+
+#sedan-card button:hover{
+  background-color: var(--BrightOrange);
+  border:solid var(--VeryLightGray);
+  color: var(--VeryLightGray);
+}
+
+#suvs-card button{
+  color: var(--DarkCyan);
+}
+
+#suvs-card button:hover{
+  background-color: var(--DarkCyan);
+  border:solid var(--VeryLightGray);
+  color: var(--VeryLightGray);
+}
+
+#luxury-card button{
+  color: var(--VeryDarkCyan);
+}
+
+#luxury-card button:hover{
+  background-color: var(--VeryDarkCyan);
+  border:solid var(--VeryLightGray);
+  color: var(--VeryLightGray);
+}
+
+.attribution {
+      font-size: 11px;
+      text-align:center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*Mobile Desing*/
+
+@media screen and (max-width:375px) {
+
+  .card-group{
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+
+  }
+
+  .card{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .card-paragraph{
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 14.5px;
+    color: var(--TransparentWhite);
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  #sedan-card{
+    border-start-end-radius: 0.5rem;
+    border-end-start-radius: 0;
+  }
+
+  #luxury-card{
+    border-end-end-radius: 0.5rem;
+    border-end-start-radius: 0.5rem;
+    border-start-end-radius: 0;
+  }
+}
