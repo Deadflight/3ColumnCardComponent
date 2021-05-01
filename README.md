@@ -24,8 +24,17 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
+- Desktop desing:
 
-![](./screenshot.jpg)
+![](./images/desktop-desing.PNG)
+
+- Mobile desing:
+
+![](./images/mobile-desing.PNG)
+
+![](./images/mobile-desing-2.PNG)
+
+![](./images/mobile-desing-3.PNG)
 
 ### Links
 
